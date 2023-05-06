@@ -8,4 +8,16 @@ const decrement = () => {
     type: "DECREMENT",
   };
 };
-export { increment, decrement };
+
+const incrementAsync = () => {
+  return {
+    type: "INCREMENT_ASYNC",
+  };
+};
+
+const decrementAsync = () => {
+  return {
+    type: "DECREMENT_ASYNC",
+  };
+};
+export { increment, decrement, incrementAsync, decrementAsync };
