@@ -5,6 +5,7 @@ import {
   incrementAsync,
   decrementAsync,
 } from "../redux/actions/countAction";
+
 const Counter = (props) => {
   return (
     <>
@@ -24,6 +25,7 @@ const mapStateToProps = (state) => {
     count: state.counter.count,
   };
 };
+
 export default connect(mapStateToProps, {
   increment,
   decrement,
